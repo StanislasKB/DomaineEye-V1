@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titre %}DomainEye APP | Info{% endblock titre %}
+
+{% block content %}
+    <div class="container-fluid">
+        <br><br><br>
+        <center>
+    <table class="table table-striped mt-6 w-75 ">
+        <thead>
+          <tr>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bold h4 ">Registrar Informations</td>
+            <td></td>
+          </tr>
+          <tr class="fs-4" style="background-color: ;">
+            <td>
+                
+                <div>Domain Name</div>                               
+                <div>Name</div>
+                <div>Whois Server</div>
+                <div>URL</div>
+                <div>Status</div>
+            </td>
+            <td>
+                <div>{{domain}}<div>
+               <div>{{nameRegistrar}}</div>
+               <div>{{whoisServer}}</div>
+               <div>{{registrarURL}}</div>
+               <div>{{registrarStatut}}</div>
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="bold h4">Important Dates</td>
+            <td></td>
+          </tr>
+          <tr class="fs-4" style="background-color: ;">
+            <td>
+                <div>Created On</div>
+                <div>Updated On</div>
+                <div>Expires On</div>
+                
+            </td>
+            <td>
+                <div>{{dateCreated}}</div>
+                <div>{{dateUpdated}}</div>
+                <div>{{dateExpires}}</div>
+                
+                
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="bold h4">Name servers</td>
+            <td></td>
+          </tr>
+          <tr class="fs-4" style="background-color: ;">
+            <td>
+                <div>Name Server 1</div>
+                <div>Name Server 2</div>
+                
+            </td>
+            <td>
+                <div>{{nameServer}}</div>
+                <div>{{nameServer2}}</div>
+                
+                
+            </td>
+          </tr>
+          
+          
+         
+            <td class="bold h4 w-50">Registrar Data</td>
+            <td></td>
+          </tr>
+          <tr class="" style="background-color: ;">
+            <td>
+                <div class="bold fs-4">Registrant Contact Information :</div>
+                <div class="me-5 mt-1">
+                    <table class="table table-borderless me-5 fs-5">
+                        
+                        <tr>
+                            <td>Name</td>
+                            <td>{{registrantName}}</td>
+                        </tr>
+                        <tr>
+                            <td>Organization</td>
+                            <td>{{registrantOrg}}</td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td>{{registrantCity}}</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>State</td>
+                            <td>{{registrantState}}</td>
+                        </tr>
+                        <tr>
+                            <td>Postal Code</td>
+                            <td>{{registrantPC}}</td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>{{registrantCountry}}</td>
+                        </tr>
+                        <tr>
+                            <td>Telephone</td>
+                            <td>{{registrantTel}}</td>
+                        </tr>
+                        <tr>
+                            <td>Fax</td>
+                            <td>{{registrantFax}}</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bold fs-4">Administrative Contact Information :</div>
+                <div class="me-5 mt-1">
+                    <table class="table table-borderless me-5 fs-5">
+                        <tr>
+                            <td>Name</td>
+                            <td>{{adminName}}</td>
+                        </tr>
+                        <tr>
+                            <td>Organization</td>
+                            <td>{{adminOrg}}</td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td>{{adminCity}}</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>State</td>
+                            <td>{{adminState}}</td>
+                        </tr>
+                        <tr>
+                            <td>Postal Code</td>
+                            <td>{{adminPC}}</td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>{{adminCountry}}</td>
+                        </tr>
+                        <tr>
+                            <td>Telephone</td>
+                            <td>{{adminTel}}</td>
+                        </tr>
+                        <tr>
+                            <td>Fax</td>
+                            <td>{{adminFax}}</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="bold fs-4">Technical Contact Information :</div>
+                <div class="me-5 mt-1">
+                    <table class="table table-borderless me-5 fs-5">
+                        <tr>
+                            <td>Name</td>
+                            <td>{{techName}}</td>
+                        </tr>
+                        <tr>
+                            <td>Organization</td>
+                            <td>{{techOrg}}</td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td>{{techCity}}</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>State</td>
+                            <td>{{techState}}</td>
+                        </tr>
+                        <tr>
+                            <td>Postal Code</td>
+                            <td>{{techPC}}</td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>{{techCountry}}</td>
+                        </tr>
+                        <tr>
+                            <td>Telephone</td>
+                            <td>{{techTel}}</td>
+                        </tr>
+                        <tr>
+                            <td>Fax</td>
+                            <td>{{techFax}}</td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </td>
+            <td>
+
+            </td>
+          </tr>
+          
+          
+        </tbody>
+      </table>
+    </div>
+</center>
+{% endblock content %}
